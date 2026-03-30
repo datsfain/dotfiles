@@ -3,7 +3,7 @@ set -e
 
 # =============================================================================
 # Bootstrap script — run this on a fresh Ubuntu install:
-#   curl -fsSL https://raw.githubusercontent.com/<you>/dotfiles/main/bootstrap.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/datsfain/dotfiles/main/bootstrap.sh | bash
 #   NOTE: must pipe to bash, not sh — this script uses bash syntax
 # =============================================================================
 
@@ -15,26 +15,24 @@ if [ "$(id -u)" -eq 0 ]; then
     exit 1
 fi
 
-# --- Install git, GitHub CLI, and Brave browser -------------------------------
-echo "[1/5] Installing git, GitHub CLI, and Brave browser..."
+# --- Step 1: Install tools ----------------------------------------------------
+echo "[1/5] Installing tools..."
 sudo apt update
-sudo apt install -y git gh curl
+sudo apt install -y git gh curl stow
 
-# Add Brave repository and install
+# Brave browser
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg \
     https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main" \
     | sudo tee /etc/apt/sources.list.d/brave-browser-release.list > /dev/null
 sudo apt update
 sudo apt install -y brave-browser
-
-# Set Brave as default browser
 xdg-settings set default-web-browser brave-browser.desktop 2>/dev/null || true
 
-# Install Claude Code
+# Claude Code
 curl -fsSL https://claude.ai/install.sh | bash
 
-# Install SourceGit
+# SourceGit
 curl -fsSL https://codeberg.org/api/packages/yataro/debian/repository.key \
     | sudo tee /etc/apt/keyrings/sourcegit.asc > /dev/null
 echo "deb [signed-by=/etc/apt/keyrings/sourcegit.asc] https://codeberg.org/api/packages/yataro/debian generic main" \
@@ -42,7 +40,7 @@ echo "deb [signed-by=/etc/apt/keyrings/sourcegit.asc] https://codeberg.org/api/p
 sudo apt update
 sudo apt install -y sourcegit
 
-# --- Authenticate with GitHub -------------------------------------------------
+# --- Step 2: Authenticate with GitHub ----------------------------------------
 echo "[2/5] Authenticating with GitHub..."
 if gh auth status &>/dev/null; then
     echo "  Already authenticated."
@@ -50,12 +48,10 @@ else
     gh auth login
 fi
 gh auth setup-git
-
-# Set git identity
 git config --global user.name "datsfain"
 git config --global user.email "datsfain@gmail.com"
 
-# --- Clone dotfiles repo -----------------------------------------------------
+# --- Step 3: Clone dotfiles repo ---------------------------------------------
 echo "[3/5] Cloning dotfiles repo..."
 if [ -d "$HOME/dotfiles" ]; then
     echo "  ~/dotfiles already exists, pulling latest..."
@@ -65,8 +61,25 @@ else
     gh repo clone dotfiles "$HOME/dotfiles"
 fi
 
-# --- Run migration script ----------------------------------------------------
-echo "[4/5] Running migration script..."
+# --- Step 4: Migrate to KDE Plasma (optional) --------------------------------
+echo "[4/6] KDE Plasma migration..."
 cd "$HOME/dotfiles"
 chmod +x migrate.sh
 ./migrate.sh
+
+# --- Step 5: Install apps -----------------------------------------------------
+echo "[5/6] Installing apps..."
+cd "$HOME/dotfiles"
+chmod +x apps.sh
+./apps.sh
+
+# --- Step 6: Apply dotfiles with Stow ----------------------------------------
+echo "[6/6] Applying dotfiles..."
+cd "$HOME/dotfiles"
+chmod +x stow-all.sh
+./stow-all.sh
+
+# --- Done ---------------------------------------------------------------------
+echo ""
+echo "=== Bootstrap complete! ==="
+echo "Reboot to start using your setup."
