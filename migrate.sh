@@ -82,10 +82,18 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$SCRIPT_DIR"
 
 if [ -d "kde/.config" ] && [ "$(ls -A kde/.config 2>/dev/null)" ]; then
+    # Repo has saved config — delete local defaults and stow to apply saved settings
+    for f in "$SCRIPT_DIR"/kde/.config/*; do
+        rm -f "$HOME/.config/$(basename "$f")"
+    done
     stow -v kde
-    echo "  KDE config files linked."
+    echo "  Saved KDE config files applied."
 else
-    echo "  No KDE config files found yet, skipping stow."
+    # No config in repo — capture current config
+    chmod +x backup.sh
+    ./backup.sh
+    stow --adopt -v kde
+    echo "  KDE config files captured and linked."
 fi
 
 # --- Done ---------------------------------------------------------------------
@@ -94,5 +102,3 @@ echo "=== Migration complete! ==="
 echo ""
 echo "SDDM is now your display manager and GNOME has been removed."
 echo "Reboot to start using KDE Plasma."
-echo ""
-echo "To save your KDE config later, run: ./backup.sh"
