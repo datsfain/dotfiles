@@ -137,10 +137,12 @@ ForegroundVisited=155,89,182
 
 [General]
 BrowserApplication=brave-browser.desktop
-ColorSchemeHash=32dc6f7a92bd354a14bcf38f7991e8de66fed1fe
+ColorSchemeHash=f048f05c52a43569ba37092018fd22dc32092e83
 
 [KDE]
+AnimationDurationFactor=0.125
 LookAndFeelPackage=org.kde.breezedark.desktop
+widgetStyle=Breeze
 
 [WM]
 activeBackground=49,54,59
