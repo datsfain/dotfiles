@@ -1,10 +1,28 @@
 <keymap version="1" name="Rider Laptop Keyboard" parent="Visual Studio 2022">
+  <action id="Adtui.ZoomInAction">
+    <keyboard-shortcut first-keystroke="ctrl equals" />
+  </action>
+  <action id="Adtui.ZoomOutAction">
+    <keyboard-shortcut first-keystroke="ctrl minus" />
+  </action>
   <action id="CodeCompletion">
     <keyboard-shortcut first-keystroke="ctrl space" />
     <keyboard-shortcut first-keystroke="ctrl j" />
   </action>
+  <action id="CollapseAll">
+    <keyboard-shortcut first-keystroke="ctrl minus" />
+  </action>
+  <action id="CollapseExpandableComponent">
+    <keyboard-shortcut first-keystroke="shift enter" />
+    <keyboard-shortcut first-keystroke="ctrl minus" />
+  </action>
   <action id="Diff.NextChange" />
   <action id="Diff.PrevChange" />
+  <action id="Documentation.Forward">
+    <keyboard-shortcut first-keystroke="shift ctrl minus" />
+    <mouse-shortcut keystroke="button5" />
+    <keyboard-shortcut first-keystroke="ctrl add" />
+  </action>
   <action id="EditorLeftWithSelection">
     <keyboard-shortcut first-keystroke="shift left" />
   </action>
@@ -27,8 +45,53 @@
   <action id="EditorRightWithSelection">
     <keyboard-shortcut first-keystroke="shift right" />
   </action>
+  <action id="ExpandAll">
+    <keyboard-shortcut first-keystroke="ctrl equals" />
+  </action>
+  <action id="ExpandExpandableComponent">
+    <keyboard-shortcut first-keystroke="shift enter" />
+    <keyboard-shortcut first-keystroke="ctrl equals" />
+  </action>
+  <action id="ExternalSystem.CollapseAll">
+    <keyboard-shortcut first-keystroke="ctrl minus" />
+  </action>
+  <action id="ExternalSystem.ExpandAll">
+    <keyboard-shortcut first-keystroke="ctrl equals" />
+  </action>
+  <action id="FileChooser.GoForward">
+    <keyboard-shortcut first-keystroke="shift ctrl minus" />
+    <mouse-shortcut keystroke="button5" />
+    <keyboard-shortcut first-keystroke="ctrl add" />
+  </action>
+  <action id="Forward">
+    <keyboard-shortcut first-keystroke="shift ctrl minus" />
+    <mouse-shortcut keystroke="button5" />
+    <keyboard-shortcut first-keystroke="ctrl add" />
+  </action>
+  <action id="Images.Editor.ZoomIn">
+    <keyboard-shortcut first-keystroke="ctrl equals" />
+  </action>
+  <action id="Images.Editor.ZoomOut">
+    <keyboard-shortcut first-keystroke="ctrl minus" />
+  </action>
   <action id="List-selectNextColumnExtendSelection">
     <keyboard-shortcut first-keystroke="shift right" />
+  </action>
+  <action id="Markdown.Preview.DecreaseFontSize">
+    <keyboard-shortcut first-keystroke="ctrl minus" />
+  </action>
+  <action id="Markdown.Preview.IncreaseFontSize">
+    <keyboard-shortcut first-keystroke="ctrl equals" />
+  </action>
+  <action id="ReSharperGotoNextErrorInSolution">
+    <keyboard-shortcut first-keystroke="shift alt page_down" />
+    <keyboard-shortcut first-keystroke="shift ctrl f12" />
+    <keyboard-shortcut first-keystroke="shift ctrl add" />
+  </action>
+  <action id="ReSharperGotoPrevErrorInSolution">
+    <keyboard-shortcut first-keystroke="shift alt f2" />
+    <keyboard-shortcut first-keystroke="shift alt page_up" />
+    <keyboard-shortcut first-keystroke="shift ctrl subtract" />
   </action>
   <action id="Table-selectNextColumnExtendSelection">
     <keyboard-shortcut first-keystroke="shift right" />

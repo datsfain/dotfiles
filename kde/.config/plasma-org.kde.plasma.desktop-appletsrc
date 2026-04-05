@@ -132,6 +132,10 @@ plugin=org.kde.plasma.nightcolorcontrol
 [Containments][8][Applets][18][Configuration]
 PreloadWeight=0
 
+[Containments][8][Applets][19]
+immutability=1
+plugin=org.kde.plasma.mediacontroller
+
 [Containments][8][Applets][9]
 immutability=1
 plugin=org.kde.plasma.notifications
