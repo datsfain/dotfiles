@@ -35,7 +35,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][2][Applets][16][Configuration]
-PreloadWeight=55
+PreloadWeight=60
 popupHeight=450
 popupWidth=396
 
@@ -136,6 +136,9 @@ PreloadWeight=0
 immutability=1
 plugin=org.kde.plasma.mediacontroller
 
+[Containments][8][Applets][19][Configuration]
+PreloadWeight=42
+
 [Containments][8][Applets][9]
 immutability=1
 plugin=org.kde.plasma.notifications
@@ -146,4 +149,4 @@ knownItems=org.kde.plasma.notifications,org.kde.plasma.manage-inputmethod,org.kd
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=
+screenMapping=desktop:/ExpenseVisualizer,0,423eaa8a-9af0-4e40-8f2e-ebed59dd6a5a,desktop:/daily-expenses,0,423eaa8a-9af0-4e40-8f2e-ebed59dd6a5a
