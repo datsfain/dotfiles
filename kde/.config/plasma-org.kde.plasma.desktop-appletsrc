@@ -7,6 +7,7 @@ RightButton;NoModifier=org.kde.contextmenu
 
 [Containments][1]
 ItemGeometries-1829x1143=
+ItemGeometries-1920x1200=
 ItemGeometries-2560x1600=
 ItemGeometriesHorizontal=
 activityId=423eaa8a-9af0-4e40-8f2e-ebed59dd6a5a
@@ -20,6 +21,10 @@ wallpaperplugin=org.kde.image
 [Containments][1][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
+
+[Containments][1][General]
+ToolBoxButtonState=topcenter
+ToolBoxButtonX=514
 
 [Containments][2]
 activityId=
@@ -35,7 +40,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][2][Applets][16][Configuration]
-PreloadWeight=60
+PreloadWeight=75
 popupHeight=450
 popupWidth=396
 
@@ -69,6 +74,10 @@ plugin=org.kde.plasma.pager
 immutability=1
 plugin=org.kde.plasma.icontasks
 
+[Containments][2][Applets][5][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
 [Containments][2][Applets][5][Configuration][General]
 launchers=applications:systemsettings.desktop,applications:org.kde.discover.desktop,preferred://filemanager,preferred://browser,applications:sourcegit.desktop
 
@@ -81,8 +90,12 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][2][Applets][7][Configuration]
-PreloadWeight=60
+PreloadWeight=100
 SystrayContainmentId=8
+
+[Containments][2][ConfigDialog]
+DialogHeight=84
+DialogWidth=1920
 
 [Containments][2][General]
 AppletOrder=3;4;5;6;7;16;17
@@ -106,9 +119,15 @@ plugin=org.kde.plasma.manage-inputmethod
 immutability=1
 plugin=org.kde.plasma.keyboardlayout
 
+[Containments][8][Applets][11][Configuration]
+PreloadWeight=55
+
 [Containments][8][Applets][12]
 immutability=1
 plugin=org.kde.plasma.devicenotifier
+
+[Containments][8][Applets][12][Configuration]
+PreloadWeight=100
 
 [Containments][8][Applets][13]
 immutability=1
@@ -134,19 +153,41 @@ PreloadWeight=0
 
 [Containments][8][Applets][19]
 immutability=1
-plugin=org.kde.plasma.mediacontroller
+plugin=org.kde.plasma.battery
 
 [Containments][8][Applets][19][Configuration]
-PreloadWeight=42
+PreloadWeight=87
+
+[Containments][8][Applets][20]
+immutability=1
+plugin=org.kde.plasma.mediacontroller
+
+[Containments][8][Applets][20][Configuration]
+PreloadWeight=0
+
+[Containments][8][Applets][25]
+immutability=1
+plugin=org.kde.kscreen
+
+[Containments][8][Applets][26]
+immutability=1
+plugin=org.kde.plasma.networkmanagement
+
+[Containments][8][Applets][26][Configuration]
+PreloadWeight=100
 
 [Containments][8][Applets][9]
 immutability=1
 plugin=org.kde.plasma.notifications
 
+[Containments][8][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
 [Containments][8][General]
-extraItems=org.kde.plasma.notifications,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.clipboard,org.kde.plasma.nightcolorcontrol,org.kde.kscreen
-knownItems=org.kde.plasma.notifications,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.clipboard,org.kde.plasma.nightcolorcontrol,org.kde.kscreen
+extraItems=org.kde.plasma.notifications,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.clipboard,org.kde.plasma.nightcolorcontrol,org.kde.kscreen,org.kde.plasma.networkmanagement
+knownItems=org.kde.plasma.notifications,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.clipboard,org.kde.plasma.nightcolorcontrol,org.kde.kscreen,org.kde.plasma.networkmanagement
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/ExpenseVisualizer,0,423eaa8a-9af0-4e40-8f2e-ebed59dd6a5a,desktop:/daily-expenses,0,423eaa8a-9af0-4e40-8f2e-ebed59dd6a5a
+screenMapping=desktop:/UnityRuntimeInspector,0,423eaa8a-9af0-4e40-8f2e-ebed59dd6a5a,desktop:/ci-test,0,423eaa8a-9af0-4e40-8f2e-ebed59dd6a5a,desktop:/model_backup_safetensors,0,423eaa8a-9af0-4e40-8f2e-ebed59dd6a5a,desktop:/ovpn,0,423eaa8a-9af0-4e40-8f2e-ebed59dd6a5a,desktop:/laptop.jpg,0,423eaa8a-9af0-4e40-8f2e-ebed59dd6a5a,desktop:/model_backup_model.pt,0,423eaa8a-9af0-4e40-8f2e-ebed59dd6a5a,desktop:/daily-expenses,0,423eaa8a-9af0-4e40-8f2e-ebed59dd6a5a,desktop:/laptop3.jpg,0,423eaa8a-9af0-4e40-8f2e-ebed59dd6a5a,desktop:/civen,0,423eaa8a-9af0-4e40-8f2e-ebed59dd6a5a,desktop:/danish-lang-app,0,423eaa8a-9af0-4e40-8f2e-ebed59dd6a5a,desktop:/qa-gui-agent,0,423eaa8a-9af0-4e40-8f2e-ebed59dd6a5a,desktop:/woodpecker-unity,0,423eaa8a-9af0-4e40-8f2e-ebed59dd6a5a,desktop:/tmp,0,423eaa8a-9af0-4e40-8f2e-ebed59dd6a5a,desktop:/my_rust_proj,0,423eaa8a-9af0-4e40-8f2e-ebed59dd6a5a,desktop:/UnityRuntimeInspectorTest,0,423eaa8a-9af0-4e40-8f2e-ebed59dd6a5a,desktop:/game-ci-dotnet,0,423eaa8a-9af0-4e40-8f2e-ebed59dd6a5a,desktop:/ExpenseVisualizer,0,423eaa8a-9af0-4e40-8f2e-ebed59dd6a5a,desktop:/ai-screen-test,0,423eaa8a-9af0-4e40-8f2e-ebed59dd6a5a,desktop:/ai-qa-test,0,423eaa8a-9af0-4e40-8f2e-ebed59dd6a5a,desktop:/laptop2.jpg,0,423eaa8a-9af0-4e40-8f2e-ebed59dd6a5a

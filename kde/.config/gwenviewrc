@@ -10,22 +10,26 @@ State=AAAA/wAAAAD9AAAAAAAAAoAAAAGyAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG
 ToolBarsMovable=Disabled
 
 [Recent Files]
-File1[$e]=$HOME/Downloads/IMG_5777.jpg
-File2[$e]=$HOME/Downloads/IMG_5778.jpg
-File3[$e]=$HOME/Downloads/IMG_5779.jpg
-File4[$e]=$HOME/Downloads/IMG_5780.jpg
-File5[$e]=$HOME/Downloads/IMG_5781.jpg
-File6[$e]=$HOME/Downloads/IMG_5782.jpg
-File7[$e]=$HOME/Downloads/IMG_5783.jpg
-File8[$e]=$HOME/Downloads/signal-2026-04-05-210648.jpeg
-Name1[$e]=IMG_5777.jpg
-Name2[$e]=IMG_5778.jpg
-Name3[$e]=IMG_5779.jpg
-Name4[$e]=IMG_5780.jpg
-Name5[$e]=IMG_5781.jpg
-Name6[$e]=IMG_5782.jpg
-Name7[$e]=IMG_5783.jpg
-Name8[$e]=signal-2026-04-05-210648.jpeg
+File1[$e]=$HOME/Desktop/ai-qa-test/logs/screenshots/step_006_after.png
+File10[$e]=$HOME/Desktop/ai-qa-test/1f69bf7d-room_forest.png
+File2[$e]=$HOME/Desktop/ai-qa-test/logs/screenshots/step_006_before_tap.png
+File3[$e]=$HOME/Desktop/ai-qa-test/logs/screenshots/step_006_before.png
+File4[$e]=$HOME/Desktop/ai-qa-test/logs/screenshots/step_007_after.png
+File5[$e]=$HOME/Desktop/ai-qa-test/logs/screenshots/step_007_before_tap.png
+File6[$e]=$HOME/Desktop/ai-qa-test/logs/screenshots/step_007_before.png
+File7[$e]=$HOME/Desktop/ai-qa-test/logs/screenshots/step_008_after.png
+File8[$e]=$HOME/Desktop/ai-qa-test/logs/screenshots/step_008_before_tap.png
+File9[$e]=$HOME/Desktop/ai-qa-test/logs/screenshots/step_008_before.png
+Name1[$e]=step_006_after.png
+Name10[$e]=1f69bf7d-room_forest.png
+Name2[$e]=step_006_before_tap.png
+Name3[$e]=step_006_before.png
+Name4[$e]=step_007_after.png
+Name5[$e]=step_007_before_tap.png
+Name6[$e]=step_007_before.png
+Name7[$e]=step_008_after.png
+Name8[$e]=step_008_before_tap.png
+Name9[$e]=step_008_before.png
 
 [SideBar]
-InformationSplitterSizes=0,0
+InformationSplitterSizes=212,243

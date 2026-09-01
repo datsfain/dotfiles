@@ -1,6 +1,14 @@
+[KFileDialog Settings]
+Recent Files[$e]=Ubuntu-Home_irt@moviestarplanet_com@moviestarplanet.openvpn.com_[Dublin].ovpn,file:$HOME/Downloads/Ubuntu-Home_irt@moviestarplanet_com@moviestarplanet.openvpn.com_[Dublin].ovpn
+Recent URLs[$e]=file:$HOME/Downloads/
+detailViewIconSize=16
+
 [MainWindow]
 1829x1143 screen: Height=704
 1829x1143 screen: Width=1028
+1920x1200 screen: Height=700
+1920x1200 screen: Width=1374
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAABAQAAALAAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+RestorePositionForNextInstance=false
+State=AAAA/wAAAAD9AAAAAAAABV4AAAK8AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
